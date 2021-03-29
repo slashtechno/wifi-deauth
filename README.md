@@ -5,6 +5,14 @@ A semi-automated python script that can deauth clients from access points
 * Aircrack-ng (use `sudo apt install aircrack-ng -y` to install)
 * A WiFi adapter that supports monitor mode
 
+### Install
+`wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/install | bash`
+
+### Uninstall
+`wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/uninstall | bash`
+
+
+
 ### How this works
 1. Asks for WiFi Interface (Adapter) to use
 2. Puts your WiFi Adapter into monitor mode
@@ -18,4 +26,5 @@ A semi-automated python script that can deauth clients from access points
 
 ### To-Do
 - [ ] Add install script that downloads script and adds script to bin
+- [ ] Add Update Script
 - [ ] Add uninstall script
