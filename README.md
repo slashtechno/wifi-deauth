@@ -17,5 +17,5 @@ A semi-automated python script that can deauth clients from access points
 
 
 ### To-Do
-[ ] Add install script that downloads script and adds script to bin
-[ ] Add uninstall script
+- [ ] Add install script that downloads script and adds script to bin
+- [ ] Add uninstall script
