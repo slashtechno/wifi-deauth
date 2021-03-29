@@ -14,3 +14,8 @@ A semi-automated python script that can deauth clients from access points
 6. Asks for target client's MAC (bssid)
 7. Sends deauth packets to router and specified client
 8. Stops monitor mode on that WiFI adapter
+
+
+### To-Do
+[ ] Add install script that downloads script and adds script to bin
+[ ] Add uninstall script
