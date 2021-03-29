@@ -11,7 +11,8 @@ A semi-automated python script that can deauth clients from access points
 ### Uninstall
 `wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/uninstall | bash`
 
-
+### Update
+`wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/update | bash`
 
 ### How this works
 1. Asks for WiFi Interface (Adapter) to use
