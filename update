@@ -1,0 +1,3 @@
+#!/bin/bash
+wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/uninstall | bash
+wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/install | bash
