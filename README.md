@@ -1,2 +1,16 @@
 # Wifi-Deauth
-A semi-automated python script that can deauth clients from acsess points.
+A semi-automated python script that can deauth clients from access points
+
+### Prerequisites
+* Aircrack-ng (use `sudo apt install aircrack-ng -y` to install)
+* A WiFi adapter that supports monitor mode
+
+### How this works
+1. Asks for WiFi Interface (Adapter) to use
+2. Puts your WiFi Adapter into monitor mode
+3. Scans for WiFi networks
+4. Asks for target AP's MAC address (bssid)
+5. Searches for devices connected to that AP
+6. Asks for target client's MAC (bssid)
+7. Sends deauth packets to router and specified client
+8. Stops monitor mode on that WiFI adapter
