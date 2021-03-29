@@ -1,0 +1,7 @@
+#!/bin/bash
+git clone https://github.com/slashtechno/Wifi-Deauth/
+cd Wifi-Deauth
+sudo mv WifiDeauth /bin
+sudo chmod +x /bin/WifiDeauth
+cd ..
+rm Wifi-Deauth
