@@ -1,12 +1,11 @@
 #!/bin/python3
 import os
 import subprocess
-os.system("sudo airmon-ng check kill")
 os.system("iwconfig")
 interface=input("\n\nInterface?\n")
-interface=interface+"mon"
 os.system("sudo airmon-ng start "+interface)
 #subprocess.run(["sudo" , "airodump-ng", interface ], timeout=1)
+interface=interface+"mon"
 os.system("sudo timeout -k 10 9s airodump-ng "+interface+" < /dev/null")
 AP_mac=input("AP MAC?\n")
 channel=input("\nTarget AP channel?")
