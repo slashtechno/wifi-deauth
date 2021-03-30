@@ -12,7 +12,7 @@ A semi-automated python script that can deauth clients from access points
 `wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/uninstall | bash`
 
 ### Update  
-I recommended updating frequently
+I recommended updating frequently  
 `wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/update | bash`
 
 ### How this works
