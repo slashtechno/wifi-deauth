@@ -3,7 +3,7 @@ A semi-automated python script that can deauth clients from access points
 
 ### Prerequisites
 * Aircrack-ng (use `sudo apt install aircrack-ng -y` to install)
-* A WiFi adapter that supports monitor mode
+* A WiFi adapter that supports monitor mode and package injection
 
 ### Install
 `wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/install | bash`
