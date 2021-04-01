@@ -15,6 +15,9 @@ A semi-automated python script that can deauth clients from access points
 I recommended updating frequently  
 `wget -qO- https://raw.githubusercontent.com/slashtechno/Wifi-Deauth/main/update | bash`
 
+## To run
+`WifiDeauth`
+
 ### How this works
 1. Asks for WiFi Interface (Adapter) to use
 2. Puts your WiFi Adapter into monitor mode
