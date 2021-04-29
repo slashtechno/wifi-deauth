@@ -1,7 +1,7 @@
 #!/bin/bash
-git clone https://github.com/slashtechno/WifiDeauth/
-cd Wifi-Deauth
+git clone https://github.com/slashtechno/wifi-deauth
+cd wifi-deauth
 sudo mv wifi-deauth /bin
 sudo chmod +x /bin/wifi-deauth
 cd ..
-rm -r WifiDeauth
+rm -r wifi-deauth
