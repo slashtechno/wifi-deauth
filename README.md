@@ -35,3 +35,4 @@ I recommended updating frequently
 - [X] Add install script that downloads script and adds script to bin
 - [X] Add Update Script
 - [X] Add uninstall script
+- [ ] Allow deauth attack **without** choosing specific client connected to AP
